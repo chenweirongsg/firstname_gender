@@ -9,8 +9,8 @@ Inside we have the following scripts:
 
 # How to start the Modelling #
 run the following code:
-python Modelling.py $input_training_file $output_model_dir $output_encoder_filename $n_max $status_file_dir
-eg: python Modelling.py /ncs_project/training_file.csv /ncs_project/LSTM_model /ncs_project/encoder.pkl 15 /ncs_project
+- python Modelling.py $input_training_file $output_model_dir $output_encoder_filename $n_max $status_file_dir
+- eg: python Modelling.py /ncs_project/training_file.csv /ncs_project/LSTM_model /ncs_project/encoder.pkl 15 /ncs_project
 
 note:
 1. training_file.csv shall contain the firstname and gender
@@ -19,8 +19,8 @@ note:
 
 # How to do the Prediction #
 run the following code:
-python Testing.py $input_testing_file predict $model_dir $encoder_filename $status_file_dir $n_max
-eg: python Testing.py /ncs_project/prediction.csv predict /ncs_project/LSTM_model /ncs_project/encoder.pkl /ncs_project 15
+- python Testing.py $input_testing_file predict $model_dir $encoder_filename $status_file_dir $n_max
+- eg: python Testing.py /ncs_project/prediction.csv predict /ncs_project/LSTM_model /ncs_project/encoder.pkl /ncs_project 15
 
 note:
 1. input_testing_file shall only contain the firstname
@@ -30,8 +30,8 @@ note:
 
 # How to do the Validation #
 run the following code:
-python Testing.py $input_testing_file validation $model_dir $encoder_filename $status_file_dir $n_max
-eg: python Testing.py /ncs_project/training_file.csv validation /ncs_project/LSTM_model /ncs_project/encoder.pkl /ncs_project 15
+- python Testing.py $input_testing_file validation $model_dir $encoder_filename $status_file_dir $n_max
+- eg: python Testing.py /ncs_project/training_file.csv validation /ncs_project/LSTM_model /ncs_project/encoder.pkl /ncs_project 15
 
 note:
 1. input_testing_file shall contain the firstname and gender
