@@ -13,7 +13,7 @@ Inside we have the following scripts:
 Step 0:
 change dir to current working dir that contains the ncs_flask.py, Testing_model.py and Modelling_model.py, and run the following code:
 - python ncs_flask.py
-Get the url which it is running on (for example: Running on http://127.0.0.1:5000/ )
+- Get the url which it is running on (for example: Running on http://127.0.0.1:5000/ )
 
 # How to do the Modelling #
 Type the following url and run:
