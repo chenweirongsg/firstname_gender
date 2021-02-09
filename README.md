@@ -5,8 +5,11 @@ Inside we have the following scripts:
 2. requirements.txt stores the python pkg and version used in this project
 3. Modelling.py (with Modelling.ipynb) and Testing.py (with Testing.ipynb) for you to do modelling, prediction or validation.
 4. Sample training file (training_file.csv) and sample prediction file (prediction.csv)
+5. ncs_flask.py for you to run the modelling/prediction/validation by flask python
+6. Modelling_model.py and Testing_model.py are the model files used by ncs_flask.py
+7. logger folder is for you to store the status logger file.
 
-# ====================================Using flask============================================= #
+# ===Using flask=== #
 Step 0:
 change dir to current working dir that contains the ncs_flask.py, Testing_model.py and Modelling_model.py, and run the following code:
 - python ncs_flask.py
@@ -58,7 +61,7 @@ note:
 5. The status file will store the validation accuracy for the current testing file.
 
 
-# ====================================Using normal python shell run============================================= #
+# ===Using normal python shell run=== #
 # How to do the Modelling #
 run the following code:
 - python Modelling.py $input_training_file $output_model_dir $output_encoder_filename $n_max $status_file_dir
