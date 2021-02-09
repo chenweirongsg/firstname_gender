@@ -19,38 +19,34 @@ change dir to current working dir that contains the ncs_flask.py, Testing_model.
 Type the following url and run:
 - url_running_on/ncs_modelling/$input_training_file/$output_model_dir/$output_encoder_filename/$n_max/$status_file_dir/$working_dir
 - eg: http://127.0.0.1:5000/ncs_modelling/training_file.csv/LSTM_model/encoder.pkl/15/logger/dir_to_ur_doc/Documents/ncs_project
-Note: 
-working_dir is the dir you are working on, so for other input argv, please do not add this working_dir in front of them.
-data type: working_dir => path, n_max => int, all others are stirng
+
 
 note:
 1. training_file.csv shall contain the firstname and gender
 2. n_max is the max length of the firstname, in orginal training dataset, it is 15.
 3. status_file will store the testing accuracy for the model trained based on the current training file
+4. working_dir is the dir you are working on, so for other input argv, please do not add this working_dir in front of them.
+5. data type: working_dir => path, n_max => int, all others are stirng
 
 
 # How to do the prediction #
 Type the following url and run:
 - url_running_on/ncs_testing/$input_testing_file/predict/$model_dir/$encoder_filename/$status_file_dir/$n_max/$working_dir
 - eg: http://127.0.0.1:5000/ncs_testing/prediction.csv/predict/LSTM_model/encoder.pkl/logger/15/dir_to_ur_doc/Documents/ncs_project
-Note: 
-working_dir is the dir you are working on, so for other input argv, please do not add this working_dir in front of them.
-data type: working_dir => path, n_max => int, all others are stirng
 
 note:
 1. input_testing_file shall only contain the firstname
 2. n_max is the max length of the firstname, it shall be the same as the one used in the model
 3. encoder_filename is the encoder used in the trained model
 4. The predicted gender will be added to the original input_testing_file
+5. working_dir is the dir you are working on, so for other input argv, please do not add this working_dir in front of them.
+6. data type: working_dir => path, n_max => int, all others are stirng
 
 
 # How to do the validation #
 Type the following url and run:
 - url_running_on/ncs_testing/$input_testing_file/validation/$model_dir/$encoder_filename/$status_file_dir/$n_max/$working_dir
 - eg: http://127.0.0.1:5000/ncs_testing/training_file.csv/validation/LSTM_model/encoder.pkl/logger/15/dir_to_ur_doc/Documents/ncs_project
-Note: 
-working_dir is the dir you are working on, so for other input argv, please do not add this working_dir in front of them.
-data type: working_dir => path, n_max => int, all others are stirng
 
 
 note:
@@ -59,6 +55,8 @@ note:
 3. encoder_filename is the encoder used in the trained model
 4. The predicted gender will be added to the original input_testing_file
 5. The status file will store the validation accuracy for the current testing file.
+6. working_dir is the dir you are working on, so for other input argv, please do not add this working_dir in front of them.
+7. data type: working_dir => path, n_max => int, all others are stirng
 
 
 # ===Using normal python shell run=== #
